@@ -90,9 +90,14 @@ label{
   outline: none;
   transition:all 0.5s;
   cursor: pointer;
+
 }
 .buttonform:hover{
-  background: black;
-  border: 2px solid green;
+  background:#B42D46;
+  border: 2px solid #040720;
   color: white;
+}
+.genderpart{
+  margin-left: 10%;
+  display: block;
 }
