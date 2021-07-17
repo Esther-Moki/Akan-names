@@ -34,7 +34,7 @@ function validateInputs(){
         }  
 
 
-        if(!monnthInput.value||monthInput.value<0 || monthInput.value>12){
+        if(!monthInput.value||monthInput.value<0 || monthInput.value>12){
           monthInput.nextElementSibling.style.display="block";
           monthInput.style.border="3px solid #B42D46";
         return false;
@@ -49,10 +49,10 @@ function validateInputs(){
             monthInput.nextElementSibling.style.display="block";
             monthInput.style.border="3px solid #B42D46";
           return false;
-          }else{
-            monthInput.nextElementSibling.style.display="none";
+         }else{
+          monthInput.nextElementSibling.style.display="none";
             monthInput.style.border="1px solid transparent";
-            }  
+           }  
     
     
 

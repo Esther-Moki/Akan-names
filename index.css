@@ -2,7 +2,7 @@ body{
   margin: 0;
 }
 .caps{
-
+  margin-top: 30px;
   background-image: url(/assets/butterfly.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,44 +33,51 @@ body{
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
-  z-index: 1;
 
 }
-.hero{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
 form{
   margin-bottom: 50px;
-  z-index: 1;
 }
-.fs,.ls,.yr,.mt,.dy{
+label{
   display: block;
   margin-bottom: 5px;
   font-size: 25px;
 }
-#firstname,#lastname,#yearOf,#monthOf,#dayOf{
+
+#firstname,#lastname,#yearOf,#monthOf,#dayOf{ 
   margin-bottom: 5px;
-  width: 100%;
+  width:100%;
   padding: 10px;
   font-size: 20px;
   border-radius: 15px;
   outline: none;
 }
-#errorMessage1 ,#errorMessage2,#errorMessage3,#errorMessage4{
+#errorMessage1 ,#errorMessage2,#errorMessage3,#errorMessage4{  
   margin-bottom: 6px;
   color:  #B42D46;
   display: none;
-}
-.firstpart{
+ }  
+.firstpart{ 
+  margin-right: 10%;
+  margin-left: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .firstpart .inputgroup{
   flex-basis:48% ;
-} 
+}  
+.part2{
+  margin-right:10% ;
+  margin-left:10% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.part2 .inputfield{
+  flex-basis: 30%;
+}
+
 .buttonform{
   color: #040720;
   font-size: 24px;

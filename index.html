@@ -12,7 +12,7 @@
   <div class="caps">
 
     <div class="wrapper">
-      
+
       <main>
         <div class="akan">
           <h1>EXCITED TO KNOW YOUR AKAN NAME?</h1>
@@ -22,7 +22,7 @@
          </p>
         </div>
         
-        <div class="hero">
+        <div class="">
           <form  onsubmit="return validateInputs()"> 
     
            <div class="firstpart">
@@ -33,23 +33,29 @@
              </div>
              <div class="inputgroup">
                <label class="ls">Last Name</label>
-               <input type="text" id="lastname" name="name" placeholder="Last Name">
+               <input type="text" id="lastname" placeholder="Last Name">
                <div id="errorMessage2">Your last name is required</div>
              </div>
            </div>
-                  
-           <label class="yr">Year of birth</label> 
-           <input type="number" id="yearOf" placeholder="Year of birth">
-           <div id="errorMessage3">Enter correct year of birth</div>
-    
-           <label class="mt">Month</label>
-           <input type="number" id="monthOf">
-           <div id="errorMessage4">Enter correct month of birth</div>
-    
-           <label class="dy">Day</label>
-           <input type="number" id="dayOf">
-           <div id="errorMessage5"></div>
-    
+
+           <div class="part2">  
+             <div class="inputfield">
+                <label class="yr">Year of birth</label> 
+                <input type="number" id="yearOf" placeholder="Year of birth">
+                <div id="errorMessage3">Enter correct year of birth</div>
+             </div>
+             <div class="inputfield">
+                <label class="mt">Month of birth</label>
+                <input type="number" id="monthOf" placeholder="Month born">
+                <div id="errorMessage4">Enter correct month of birth</div>
+             </div>
+             <div class="inputfield">
+                <label class="dy">Day of month</label>
+                <input type="number" id="dayOf">
+                <div id="errorMessage5"></div>
+              </div>  
+           </div>
+
            <button class="buttonform">SUBMIT FORM</button>
     
            <script src="index.js"></script>
