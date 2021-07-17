@@ -54,25 +54,48 @@ function validateInputs(){
           dayInput.nextElementSibling.style.display="none";
             dayInput.style.border="1px solid transparent";
            }  
-    
-         var valid=false;
-         for(var i=0; i<genderInput.length; i++){
-           if(genderInput[i].checked){
-               valid=true;
-               break;
-           }   
-         }
 
-          if(valid){
-          genderInput.nextElementSibling.style.display="none";
-          genderInput.style.border="1px solid transparent";
+          if(genderInput[0].checked==false && genderInput[1].checked==false){
+            genderInput.nextElementSibling.style.display="block";
+          
           }
           else{
-          genderInput.nextElementSibling.style.display="block";
-          genderInput.style.border="3px solid #B42D46";
-          return false;
+            genderInput.nextElementSibling.style.display="none";
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      //   var valid=false;
+        // for(var i=0; i<genderInput.length; i++){
+          // if(genderInput[i].checked){
+             //  valid=true;
+              // break;
+          // }   
+        // }
+
+        //  if(valid){
+         // genderInput.nextElementSibling.style.display="none";
+        //  genderInput.style.border="1px solid transparent";
+        //  }
+        //  else{
+        //  genderInput.nextElementSibling.style.display="block";
+         // genderInput.style.border="3px solid #B42D46";
+         // return false;
         
-        }
+      //  }
 
 
 
