@@ -44,7 +44,7 @@ label{
   font-size: 25px;
 }
 
-#firstname,#lastname,#yearOf,#monthOf,#dayOf{ 
+#firstname,#lastname,#yearOf,#monthOf,#dayOf,#weekday{ 
   margin-bottom: 5px;
   width:100%;
   padding: 10px;
@@ -85,7 +85,7 @@ label{
   padding: 10px;
   border: 2px solid #B42D46;
   border-radius: 20px;
-  margin-left: 30%;
+  margin-left: 45%;
   margin-top: 20px;
   outline: none;
   transition:all 0.5s;
@@ -100,4 +100,7 @@ label{
 .genderpart{
   margin-left: 10%;
   display: block;
+}
+.lastpart{
+  
 }
