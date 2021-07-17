@@ -5,7 +5,7 @@ function validateInputs(){
   var yearInput=document.getElementById("yearOf");
   var monthInput=document.getElementById("monthOf");
   var dayInput=document.getElementById("dayOf"); 
-  var genderInput=document.getElementById.gender;
+  var genderInput=document.forms["gender"];
 
   if(!firstnameInput.value){
     firstnameInput.nextElementSibling.style.display="block";
@@ -55,21 +55,24 @@ function validateInputs(){
             dayInput.style.border="1px solid transparent";
            }  
     
-        
-         for(var i=0; i<x.length; i++){
-           if(genderInput[i].checked);
+         var valid=false;
+         for(var i=0; i<genderInput.length; i++){
+           if(genderInput[i].checked){
                valid=true;
                break;
+           }   
          }
-        if(valid){
-         genderInput.nextElementSibling.style.display="none";
-         genderInput.style.border="1px solid transparent";
-         }
-        else{
-         genderInput.nextElementSibling.style.display="block";
-         genderInput.style.border="3px solid #B42D46";
-      
-       }
+
+          if(valid){
+          genderInput.nextElementSibling.style.display="none";
+          genderInput.style.border="1px solid transparent";
+          }
+          else{
+          genderInput.nextElementSibling.style.display="block";
+          genderInput.style.border="3px solid #B42D46";
+          return false;
+        
+        }
 
 
 
