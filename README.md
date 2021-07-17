@@ -1,8 +1,8 @@
-# My Portfolio
+# AKAN NAMES
 #### This project enables you to know your Akan name from the Ghanian culture,Date of current version:18/07/2021
 #### Done by Esther Moki
 ## Description
-This is a webpage that prints out your Akan name after filling the form with the details reuired.
+This is a webpage that prints out your Akan name after filling the form with the details required.
 ## Setup/Installation Requirement
 Clone this repo to your desktop and run ubuntu to install all the dependencies.
 ## Technologies Used
