@@ -2,8 +2,22 @@ body{
   margin: 0;
 }
 .caps{
-  background-color: #040720;; 
-  color: #40E0D0;
+
+  background-image: url(/assets/butterfly.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 100%;
+  color:#1DBD24;
+  position: relative;
+  margin-bottom: 50px;
+}
+ .wrapper{ 
+  background: linear-gradient(-45deg,#040720, #000000);                 
+  opacity: 0.9;
+  position:absolute ;
+  width: 100%;
+  height: 100%;
 }
 .akan h1{
  text-align: center;
@@ -12,12 +26,15 @@ body{
  text-shadow: 3px 3px 2px #717D7E;
  padding-top: 30px;
  padding-bottom: 20px;
+
 }
 .state{
   font-size: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 20px;
+  z-index: 1;
+
 }
 .hero{
   display: flex;
@@ -26,6 +43,7 @@ body{
 } 
 form{
   margin-bottom: 50px;
+  z-index: 1;
 }
 .fs,.ls,.yr,.mt,.dy{
   display: block;

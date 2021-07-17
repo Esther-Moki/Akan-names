@@ -5,58 +5,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/bootstrap/bootstrap.css">
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="bootstrap/bootstrap.css">
 </head>
-
 <body>
-  <div class="caps" >
-    <div class="akan">
-      <h1>WANT TO KNOW YOUR AKAN NAME?</h1>
-      <p class="state">Akan names are derived from Ghanian culture. Frequently in Ghana,children are given their
-        first name as a 'day name' which corresponds to the day in the week they were born. Want to know your 
-        <strong><em>Akan name</em></strong>?Fill in the awesome form below!
-      </p>
-    </div>
-   <div class="hero">
+  <div class="caps">
 
-       <form  onsubmit="return validateInputs()"> 
-         <div class="firstpart">
-            <div class="inputgroup">
-             <label class="fs">First Name</label>
-             <input type="text" id="firstname" name="name"  placeholder="First Name">
-             <div id="errorMessage1">Your first name is required</div>
+    <div class="wrapper">
+      
+      <main>
+        <div class="akan">
+          <h1>EXCITED TO KNOW YOUR AKAN NAME?</h1>
+          <p class="state">Akan names are derived from Ghanian culture. Frequently in Ghana,children are given 
+            their first name as a 'day name' which corresponds to the day in the week they were born. Want to 
+            know your <strong><em>Akan name</em></strong>?Fill in the awesome form below!
+         </p>
+        </div>
+        
+        <div class="hero">
+          <form  onsubmit="return validateInputs()"> 
+    
+           <div class="firstpart">
+             <div class="inputgroup">
+               <label class="fs">First Name</label>
+               <input type="text" id="firstname" name="name"  placeholder="First Name">
+               <div id="errorMessage1">Your first name is required</div>
+             </div>
+             <div class="inputgroup">
+               <label class="ls">Last Name</label>
+               <input type="text" id="lastname" name="name" placeholder="Last Name">
+               <div id="errorMessage2">Your last name is required</div>
+             </div>
            </div>
-           <div class="inputgroup">
-             <label class="ls">Last Name</label>
-             <input type="text" id="lastname" name="name" placeholder="Last Name">
-             <div id="errorMessage2">Your last name is required</div>
-           </div>
-          </div>
-              
-         <label class="yr">Year of birth</label> 
-         <input type="number" id="yearOf" placeholder="Year of birth">
-         <div id="errorMessage3">Enter correct year of birth</div>
+                  
+           <label class="yr">Year of birth</label> 
+           <input type="number" id="yearOf" placeholder="Year of birth">
+           <div id="errorMessage3">Enter correct year of birth</div>
+    
+           <label class="mt">Month</label>
+           <input type="number" id="monthOf">
+           <div id="errorMessage4">Enter correct month of birth</div>
+    
+           <label class="dy">Day</label>
+           <input type="number" id="dayOf">
+           <div id="errorMessage5"></div>
+    
+           <button class="buttonform">SUBMIT FORM</button>
+    
+           <script src="index.js"></script>
 
-         <label class="mt">Month</label>
-         <input type="number" id="monthOf">
-         <div id="errorMessage4">Enter correct month of birth</div>
+          </form>
 
-         <label class="dy">Day</label>
-         <input type="number" id="dayOf">
-         <div id="errorMessage5"></div>
+        </div>
+      </main>
+    </div>  
 
-         <button class="buttonform">SUBMIT FORM</button>
-
-         <script src="index.js"></script>
-       </form>
- 
-      </div>
-
- </div>
-
-
-
-
+ </div> 
+    
+    
+  
 </body>
 </html>
