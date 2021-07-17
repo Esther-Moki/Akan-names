@@ -52,7 +52,7 @@ label{
   border-radius: 15px;
   outline: none;
 }
-#errorMessage1 ,#errorMessage2,#errorMessage3,#errorMessage4{  
+#errorMessage1 ,#errorMessage2,#errorMessage3,#errorMessage4,#errorMessage5,#errorMessage6{  
   margin-bottom: 6px;
   color:  #B42D46;
   display: none;
@@ -68,6 +68,7 @@ label{
   flex-basis:48% ;
 }  
 .part2{
+  margin-top: 20px;
   margin-right:10% ;
   margin-left:10% ;
   display: flex;
