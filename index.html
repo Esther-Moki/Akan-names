@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="bootsrap/bootstrap.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
 </head>
 
 <body>
@@ -19,57 +18,43 @@
         <strong><em>Akan name</em></strong>?Fill in the awesome form below!
       </p>
     </div>
+   <div class="hero">
 
-    <form id="myform" onsubmit="return validation()">
-
-      <div class="inputField">
-        <div class="firstpart">
-          <label for="firstname">First Name</label>
-          <input type="name" id="firstname" name="firstname">
-          <div id="errorMessage1"></div>
-
-          <label for="lastname">Last Name</label>
-          <input type="text" id="lastname">
-          <div id="errorMessage2"></div>
-       </div>
+       <form  onsubmit="return validateInputs()"> 
+         <div class="firstpart">
+            <div class="inputgroup">
+             <label class="fs">First Name</label>
+             <input type="text" id="firstname" name="name"  placeholder="First Name">
+             <div id="errorMessage1">Your first name is required</div>
+           </div>
+           <div class="inputgroup">
+             <label class="ls">Last Name</label>
+             <input type="text" id="lastname" name="name" placeholder="Last Name">
+             <div id="errorMessage2">Your last name is required</div>
+           </div>
+          </div>
               
-       <label for="Year">Year</label>
-       <input type="number" id="year">
-       <div id="errorMessage3"></div>
+         <label class="yr">Year of birth</label> 
+         <input type="number" id="yearOf" placeholder="Year of birth">
+         <div id="errorMessage3">Enter correct year of birth</div>
 
-       <label for="month">Month</label>
-       <input type="number" id="month">
-       <div id="errorMessage4"></div>
+         <label class="mt">Month</label>
+         <input type="number" id="monthOf">
+         <div id="errorMessage4">Enter correct month of birth</div>
 
-       <label for="day">Day</label>
-       <input type="number" id="day">
-       <div id="errorMessage5"></div><br>
+         <label class="dy">Day</label>
+         <input type="number" id="dayOf">
+         <div id="errorMessage5"></div>
 
+         <button class="buttonform">SUBMIT FORM</button>
 
-
-       <button>submit</button>
-
-        
+         <script src="index.js"></script>
+       </form>
+ 
       </div>
 
+ </div>
 
-
-
-  
-
-
-    </form>
-
-
-
-
-
-
-
-
-
-
-    <script src="/script.js"></script>
 
 
 
