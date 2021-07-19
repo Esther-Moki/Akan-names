@@ -43,7 +43,11 @@ label{
 .gr{
   padding-right: 30px;
 }
-
+.gd{
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+}
 
 
 
