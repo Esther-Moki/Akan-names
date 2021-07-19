@@ -45,50 +45,50 @@ function validator(){
 
   
   if(d==0 && gender=="male"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[0]+" You were born on a"+days[0]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[0]+" you were born on a"+days[0]);
     return false;
   }else
   if(d==1 && gender=="male"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[1]+" You were born on a"+days[1]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[1]+" you were born on a"+days[1]);
     return false;
   } else
   
   if(d==2 && gender=="male"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[2]+" You were born on a"+days[2]);
+    window.alert("Dear "+uname+"\nYour Akan name is "+gmale[2]+" you were born on a"+days[2]);
     return false;
   }else
   if(d==3 && gender=="male"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[3]+" You were born on a"+days[3]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[3]+" you were born on a"+days[3]);
     return false;
   }else
   if(d==4 && gender=="male"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[4]+" You were born on a"+days[4]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[4]+" you were born on a"+days[4]);
     return false;
   }else
   if(d==5 && gender=="male"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[5]+" You were born on a"+days[5]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[5]+" you were born on a"+days[5]);
     return false;
   }else
   if(d==6 && gender=="male"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[6]+" You were born on a"+days[6]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[6]+" you were born on a"+days[6]);
     return false;
   }else
   if(d==0 || gender=="female"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[0]+" You were born on a"+days[0]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[0]+" you were born on a"+days[0]);
     return false;
   }else
   if(d==1 && gender=="female"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[1]+" You were born on a"+days[1]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[1]+" you were born on a"+days[1]);
     return false;
   }
   else
   if(d==2 && gender=="female"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[2]+" You were born on a"+days[2]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[2]+" you were born on a"+days[2]);
     return false;
   }else
   
   if(d==3 && gender=="female"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[3]+" You were born on a"+days[3]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[3]+" you were born on a"+days[3]);
     return false;
   }else
   if(d==4 && gender=="female"){
@@ -96,11 +96,11 @@ function validator(){
     return false;
   }else
   if(d==5 && gender=="female"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[5]+" You were born on a"+days[5]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[5]+" you were born on a"+days[5]);
     return false;
   }else
   if(d==6 && gender=="female"){
-    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[6]+" You were born on a"+days[6]);
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[6]+" you were born on a"+days[6]);
     return false;
   }alert('Invalid')
 
