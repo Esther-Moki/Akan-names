@@ -1,69 +1,107 @@
-function validateInputs() {
-  var form = document.getElementsByTagName("form");
-  var firstnameInput = document.getElementById("firstname");
-  var lastnameInput = document.getElementById("lastname");
-  var yearInput = document.getElementById("yearOf");
-  var monthInput = document.getElementById("monthOf");
-  var dayInput = document.getElementById("dayOf");
-  var genderInput = document.forms["gender"];
-  var century=document.getElementById('century')
+function validator(){
+  var uname=document.getElementById('name').value;
+  var cc=document.getElementById('century').value;
+  var yy=document.getElementById('year').value;
+  var mm=document.getElementById('month').value;
+  var dd=document.getElementById('day').value;
+  var gender=document.getElementById('gender').value;
 
-  if (!firstnameInput.value) {
-    firstnameInput.nextElementSibling.style.display = "block";
-    firstnameInput.style.border = "3px solid #B42D46";
+  if(uname==''){
+    window.alert('Input your name');
+    uname.focus();
     return false;
-  } else {
-    firstnameInput.nextElementSibling.style.display = "none";
-    firstnameInput.style.border = "1px solid transparent";
   }
-
-  if (!lastnameInput.value) {
-    lastnameInput.nextElementSibling.style.display = "block";
-    lastnameInput.style.border = "3px solid #B42D46";
+  if(cc==''){
+    window.alert("Input century");
+    cc.focus();
     return false;
-  } else {
-    lastnameInput.nextElementSibling.style.display = "none";
-    lastnameInput.style.border = "1px solid transparent";
   }
-
-  if (!yearInput.value || yearInput.value < 1900 || yearInput.value > 2021) {
-    yearInput.nextElementSibling.style.display = "block";
-    yearInput.style.border = "3px solid #B42D46";
+  if(yy==''){
+    window.alert("Input year");
+    yy.focus();
     return false;
-  } else {
-    yearInput.nextElementSibling.style.display = "none";
-    yearInput.style.border = "1px solid transparent";
   }
-
-
-  if (!monthInput.value || monthInput.value < 0 || monthInput.value > 12) {
-    monthInput.nextElementSibling.style.display = "block";
-    monthInput.style.border = "3px solid #B42D46";
+  if(mm==''|| mm<0 || mm>12){
+    window.alert("Input Month ");
+    mm.focus();
     return false;
-  } else {
-    monthInput.nextElementSibling.style.display = "none";
-    monthInput.style.border = "1px solid transparent";
   }
-
-
-
-  if (!dayInput.value || dayInput.value < 0 || dayInput.value > 31) {
-    dayInput.nextElementSibling.style.display = "block";
-    dayInput.style.border = "3px solid #B42D46";
+  if(dd==''||dd<0 || dd>31){
+    window.alert("Input valid date");
+    dd.focus();
     return false;
-  } else {
-    dayInput.nextElementSibling.style.display = "none";
-    dayInput.style.border = "1px solid transparent";
   }
-
-  if (genderInput[0].checked == false && genderInput[1].checked == false) {
-    genderInput.nextElementSibling.style.display = "block";
-
+  if(gender==''){
+    window.alert("Select valid Gender");
+    gender.focus();
+    return false;
   }
-  else {
-    genderInput.nextElementSibling.style.display = "none";
-  }
-  console.log('Hello GUys')
+  
+  var d = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
+  // var d=parseInt((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7);
+  var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  var gmale =["Kwasi","Kwadwo","Kwabena","Kwaku","yaw","Kofi","Kwame"];
+  var gfemale=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
+  
+  if(d==0 && gender=="male"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[0]+" You were born on a"+days[0]);
+    return false;
+  }else
+  if(d==1 && gender=="male"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[1]+" You were born on a"+days[1]);
+    return false;
+  } else
+  
+  if(d==2 && gender=="male"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[2]+" You were born on a"+days[2]);
+    return false;
+  }else
+  if(d==3 && gender=="male"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[3]+" You were born on a"+days[3]);
+    return false;
+  }else
+  if(d==4 && gender=="male"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[4]+" You were born on a"+days[4]);
+    return false;
+  }else
+  if(d==5 && gender=="male"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[5]+" You were born on a"+days[5]);
+    return false;
+  }else
+  if(d==6 && gender=="male"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gmale[6]+" You were born on a"+days[6]);
+    return false;
+  }else
+  if(d==0 || gender=="female"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[0]+" You were born on a"+days[0]);
+    return false;
+  }else
+  if(d==1 && gender=="female"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[1]+" You were born on a"+days[1]);
+    return false;
+  }
+  else
+  if(d==2 && gender=="female"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[2]+" You were born on a"+days[2]);
+    return false;
+  }else
+  
+  if(d==3 && gender=="female"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[3]+" You were born on a"+days[3]);
+    return false;
+  }else
+  if(d==4 && gender=="female"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[4]+" You were born on a"+days[4]);
+    return false;
+  }else
+  if(d==5 && gender=="female"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[5]+" You were born on a"+days[5]);
+    return false;
+  }else
+  if(d==6 && gender=="female"){
+    window.alert("Dear "+uname+"\n Your Akan name is "+gfemale[6]+" You were born on a"+days[6]);
+    return false;
+  }alert('Invalid')
 
 }

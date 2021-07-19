@@ -48,8 +48,24 @@ label{
   outline: none;
   padding: 5px;
 }
-
-
+.btn{
+  background: #ECC10E;
+  color: #040720;
+  font-size: 24px;
+  padding: 10px;
+  border: 2px solid #B42D46;
+  border-radius: 40px;
+  margin-left: 42%;
+  margin-top: 20px;
+  outline: none;
+  transition:all 0.5s;
+  cursor: pointer;
+}
+.btn:hover{
+  background:#B42D46;
+  border: 2px solid #040720;
+  color: white;
+}
 
 
 
