@@ -1,4 +1,62 @@
-body{
+.container{
+  background-image: url(assets/butterfly.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 7%;
+}
+.wrapper{
+  background: linear-gradient(-45deg,#040720, #000000);                 
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+form{
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{ 
+
   margin: 0;
 }
 .caps{
@@ -108,3 +166,4 @@ label{
 .lastpart .inputfield{
   flex-basis: 50%;
 }
+ */
