@@ -20,14 +20,29 @@ form{
   padding-bottom: 40px;
   padding-top: 60px;
 }
-
-
-
-
-
-
-
-
+input{
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+label{
+  padding-right: 15px;
+}
+.ct{
+  padding-right: 20px;
+}
+.yr{
+  padding-right: 50px;
+}
+.mt{
+  padding-right: 35px;
+}
+.dy{
+  padding-right: 56px;
+}
+.gr{
+  padding-right: 30px;
+}
 
 
 

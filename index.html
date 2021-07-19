@@ -12,21 +12,22 @@
     <div class="container">
      <div class="wrapper">
     
-       <div class="top part">
-        <h1>EXCITED TO KNOW <br>YOUR AKAN NAME?</h1>
+        <div class="top part">
+          <h1>EXCITED TO KNOW <br>YOUR AKAN NAME?</h1>
           <p class="state">Akan names are derived from Ghanian culture.<br>Frequently in Ghana,children are given 
             their<br> first name as a 'day name' which corresponds to <br>the day in the week they were born. Want to 
             know<br> your <strong><em>Akan name</em></strong>?Fill in the awesome form below!
-        </p>
+          </p>
        </div>
 
         <form onsubmit="return validator()">
-          <label>Name: </label><input type="text" placeholder="Input name here" id="name" name="name"><br><br>
-          <label>Century</label> <input type="number" name="century" id="century" placeholder="Input Century"><br><br>
-          <label>Year</label><input type="number" name="year" id="year" placeholder="Input you year of birth"><br><br>
-          <label> Month: </label><input type="number" name="month" id="month" placeholder="input month month"><br><br>
-          <label>Day</label><input type="number" name="day" id="day" placeholder="Input day"><br><br>
-          <label>Gender: </label><select name="gender" id="gender">
+
+          <label>Full name: </label><input type="text" placeholder="Input your name here" id="name" name="name"><br><br>
+          <label class="ct">Century:</label> <input type="number" name="century" id="century" placeholder="Input the Century"><br><br>
+          <label class="yr">Year:</label><input type="number" name="year" id="year" placeholder="Input your year of birth"><br><br>
+          <label class="mt"> Month:</label><input type="number" name="month" id="month" placeholder="Input month of birth"><br><br>
+          <label class="dy">Day:</label><input type="number" name="day" id="day" placeholder="Input day of birth"><br><br>
+          <label class="gr">Gender:</label><select name="gender" id="gender" class="gd">
             <option value=""></option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -35,6 +36,8 @@
 
 
         </form>
+        <script src="index.js"></script>
+  
      </div>
 
   </div>
